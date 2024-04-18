@@ -57,9 +57,7 @@ ${renderLicenseBadge(license)} I used ${renderLicenseLink(license)}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return ` 
-
-# ${data.projectName}
+  return `# ${data.projectName}
 
 ## Description
 
@@ -103,8 +101,8 @@ ${data.test}
 
 ## Questions
 
-${gitHub}
-${email}
+${data.gitHub}
+${data.email}
 
 `;
 
